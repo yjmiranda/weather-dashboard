@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Weather Dashboard</title>
         <script src="https://kit.fontawesome.com/0686ba3697.js" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -27,17 +26,25 @@
                             <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
                         </div>
                     </form>
-                    <div class="row pb-3 pl-2 pr-2" id="city-list"><div>
+                    <div class="row pb-3 pl-2 pr-2" id="city-list"></div>
                 </div>
+
                 <div class="col-md-9">
-                    <div class="row" id="current-weather"></div>
-                    <div class="row" id="five-day"></div>
+                    <div class="row mt-2">
+                        <div class="card ml-2 border-right-0 col-md-12">
+                            <div class="card-body text-center" id="current-weather">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2" id="five-day"></div>
                 </div>
             </div>
         </div>
-
+        <script src="assets/js/jQuery3.4.1.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="assets/js/moment.js"></script>
+        <script src="assets/js/moment-with-locales.js"></script>
         <script src="assets/js/script.js"></script>
     </body>
 </html>
